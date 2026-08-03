@@ -193,6 +193,59 @@ h3 {
   color: var(--white);
 }
 
+.button--whatsapp {
+  gap: 10px;
+  border-color: #25d366;
+  background: #25d366;
+  color: #082113;
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.24);
+}
+
+.whatsappMark {
+  position: relative;
+  display: inline-grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--white);
+  flex: 0 0 28px;
+}
+
+.whatsappMark::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #25d366;
+  border-radius: 50%;
+}
+
+.whatsappMark::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  bottom: 4px;
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  border-right: 2px solid #25d366;
+  border-bottom: 2px solid #25d366;
+  transform: rotate(25deg);
+}
+
+.whatsappMark span {
+  position: relative;
+  z-index: 1;
+  width: 9px;
+  height: 4px;
+  border: 2px solid #25d366;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 0 0 8px 0;
+  transform: rotate(42deg);
+}
+
 .hero__proof {
   max-width: 760px;
   margin-top: 42px;
@@ -457,11 +510,6 @@ footer p {
   color: #e7edf5;
   font-size: 1.16rem;
   line-height: 1.7;
-}
-
-.thanksPanel__whatsapp {
-  border-color: rgba(255, 255, 255, 0.42);
-  background: rgba(255, 255, 255, 0.12);
 }
 
 @media (max-width: 900px) {

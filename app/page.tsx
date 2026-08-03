@@ -72,8 +72,11 @@ export default function Home() {
             <a className="button button--primary" href="#quote">
               Contact Us
             </a>
-            <a className="button button--secondary" href={whatsappUrl}>
-              WhatsApp
+            <a className="button button--whatsapp" href={whatsappUrl}>
+              <span className="whatsappMark" aria-hidden="true">
+                <span />
+              </span>
+              <span>WhatsApp</span>
             </a>
           </div>
           <div className="hero__proof" aria-label="Service highlights">

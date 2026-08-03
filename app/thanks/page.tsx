@@ -13,10 +13,13 @@ export default function ThanksPage() {
             Back to Home
           </a>
           <a
-            className="button button--secondary thanksPanel__whatsapp"
+            className="button button--whatsapp"
             href="https://wa.me/821055670102?text=Hello%20GANDAKOREA%2C%20I%20submitted%20a%20parts%20request%20on%20your%20website."
           >
-            WhatsApp
+            <span className="whatsappMark" aria-hidden="true">
+              <span />
+            </span>
+            <span>WhatsApp</span>
           </a>
         </div>
       </section>
