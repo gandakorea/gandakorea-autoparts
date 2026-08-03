@@ -227,7 +227,7 @@ export default function Home() {
       <footer>
         <strong>GANDAKOREA / Korea-Autoparts</strong>
         <p>
-          Hyundai, Kia, and MOBIS are trademarks of their respective owners.
+          Hyundai and Kia are trademarks of their respective owners.
           GANDAKOREA / Korea-Autoparts is an independent sourcing and order
           support service unless otherwise stated.
         </p>
