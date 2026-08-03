@@ -168,6 +168,12 @@ export default function Home() {
             value="New parts inquiry from GANDAKOREA website"
           />
           <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_url"
+            value="https://gandakorea-autoparts.kongee7425.chatgpt.site/#quote"
+          />
           <input
             type="hidden"
             name="_next"
