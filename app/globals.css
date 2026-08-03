@@ -383,6 +383,10 @@ footer {
   outline: none;
 }
 
+.quoteForm__honey {
+  display: none;
+}
+
 .quoteForm input:focus,
 .quoteForm textarea:focus {
   border-color: var(--blue);
@@ -423,6 +427,41 @@ footer p {
   margin-bottom: 0;
   font-size: 0.88rem;
   line-height: 1.7;
+}
+
+.thanksPage {
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(5, 19, 35, 0.88), rgba(5, 19, 35, 0.42)),
+    url("/og.png");
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  padding: 40px 20px;
+}
+
+.thanksPanel {
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.thanksPanel h1 {
+  max-width: 680px;
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
+}
+
+.thanksPanel p:not(.eyebrow) {
+  max-width: 620px;
+  color: #e7edf5;
+  font-size: 1.16rem;
+  line-height: 1.7;
+}
+
+.thanksPanel__whatsapp {
+  border-color: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 @media (max-width: 900px) {

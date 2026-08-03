@@ -159,21 +159,37 @@ export default function Home() {
 
         <form
           className="quoteForm"
-          action="mailto:autoparts7425@gmail.com"
+          action="https://formsubmit.co/autoparts7425@gmail.com"
           method="post"
-          encType="text/plain"
         >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New parts inquiry from GANDAKOREA website"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://gandakorea-autoparts.kongee7425.chatgpt.site/thanks"
+          />
+          <input
+            className="quoteForm__honey"
+            name="_honey"
+            tabIndex={-1}
+            autoComplete="off"
+          />
           <label>
             Name
-            <input name="Name" autoComplete="name" />
+            <input name="Name" autoComplete="name" required />
           </label>
           <label>
             Country
-            <input name="Country" autoComplete="country-name" />
+            <input name="Country" autoComplete="country-name" required />
           </label>
           <label>
             Email
-            <input name="Email" type="email" autoComplete="email" />
+            <input name="email" type="email" autoComplete="email" required />
           </label>
           <label>
             WhatsApp
@@ -181,7 +197,7 @@ export default function Home() {
           </label>
           <label className="quoteForm__wide">
             Vehicle model / year
-            <input name="Vehicle model and year" />
+            <input name="Vehicle model and year" required />
           </label>
           <label className="quoteForm__wide">
             VIN or part number
@@ -189,7 +205,7 @@ export default function Home() {
           </label>
           <label className="quoteForm__wide">
             Parts and quantity
-            <textarea name="Parts and quantity" rows={4} />
+            <textarea name="Parts and quantity" rows={4} required />
           </label>
           <button type="submit">Contact Us</button>
           <p>
