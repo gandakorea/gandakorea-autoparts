@@ -70,7 +70,7 @@ export default function Home() {
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#quote">
-              Request a Quote
+              Contact Us
             </a>
             <a className="button button--secondary" href={whatsappUrl}>
               WhatsApp
@@ -191,7 +191,7 @@ export default function Home() {
             Parts and quantity
             <textarea name="Parts and quantity" rows={4} />
           </label>
-          <button type="submit">Send Quote Request</button>
+          <button type="submit">Contact Us</button>
           <p>
             Prefer chat? Message us on WhatsApp for photos, part numbers, and
             urgent requests.
