@@ -280,12 +280,22 @@ footer {
   align-items: start;
 }
 
-.intro p:last-child,
+.intro__copy p,
 .band__content p,
 .quote__copy p {
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.8;
+}
+
+.intro__copy p {
+  margin-bottom: 18px;
+}
+
+.intro__copy p:last-child {
+  margin-bottom: 0;
+  color: var(--blue-dark);
+  font-weight: 800;
 }
 
 .section__heading {

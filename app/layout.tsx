@@ -20,14 +20,17 @@ export const metadata: Metadata = {
     template: "%s | Korea Autoparts Source",
   },
   description:
-    "Korea auto parts supplier for Hyundai and Kia parts. Request quotes for retail, workshop, distributor, and wholesale orders with VIN or part number support.",
+    "Korea auto parts supplier for Hyundai, Kia, MOBIS, and GM Korea parts. Request quotes with VIN or part number support, transparent Korea shipping costs, and PayPal payment.",
   keywords: [
     "Korea auto parts supplier",
     "Hyundai parts from Korea",
     "Kia parts from Korea",
+    "MOBIS parts from Korea",
+    "GM Korea parts",
     "Korean auto parts",
     "Hyundai Kia parts supplier",
     "auto parts sourcing Korea",
+    "PayPal auto parts Korea",
   ],
   alternates: {
     canonical: "/",
@@ -43,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Korea Autoparts Source | Hyundai Kia Parts From Korea",
     description:
-      "Request Hyundai and Kia auto parts from Korea for retail and wholesale orders.",
+      "Request Hyundai, Kia, MOBIS, and GM Korea auto parts with transparent shipping costs from Korea.",
     url: "/",
     siteName: "Korea Autoparts Source",
     type: "website",
@@ -53,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Korea Autoparts Source | Hyundai Kia Parts From Korea",
     description:
-      "Request Hyundai and Kia auto parts from Korea for retail and wholesale orders.",
+      "Request Hyundai, Kia, MOBIS, and GM Korea auto parts with transparent shipping costs from Korea.",
     images: ["/og.png"],
   },
 };

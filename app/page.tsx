@@ -2,6 +2,8 @@ const whatsappUrl =
   "https://wa.me/821055670102?text=Hello%20GANDAKOREA%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20Korean%20auto%20parts.";
 
 const categories = [
+  "MOBIS parts",
+  "GM Korea parts",
   "Engine parts",
   "Transmission",
   "Brake system",
@@ -34,12 +36,12 @@ const process = [
   {
     step: "02",
     title: "We check availability",
-    body: "We help verify compatible Hyundai and Kia parts and prepare a clear quotation from Korea.",
+    body: "We help verify compatible Hyundai, Kia, MOBIS, and GM Korea parts and prepare a clear quotation.",
   },
   {
     step: "03",
-    title: "Confirm and ship",
-    body: "After confirmation, we support packing and international shipping for small and bulk orders.",
+    title: "Review costs and pay",
+    body: "We share transparent shipping costs from Korea before payment, and PayPal payment is available for confirmed orders.",
   },
 ];
 
@@ -64,9 +66,9 @@ export default function Home() {
           <p className="eyebrow">Korean auto parts sourcing for global buyers</p>
           <h1>Hyundai Kia All Parts From Korea</h1>
           <p className="hero__lead">
-            Source Hyundai and Kia genuine parts from Korea with support for
-            individual orders, workshop needs, distributor supply, and worldwide
-            orders.
+            Source Hyundai, Kia, MOBIS, and GM Korea parts from Korea with
+            support for individual orders, workshop needs, distributor supply,
+            and worldwide orders.
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#quote">
@@ -81,8 +83,8 @@ export default function Home() {
           </div>
           <div className="hero__proof" aria-label="Service highlights">
             <span>VIN and part number check</span>
-            <span>Worldwide shipping support</span>
-            <span>Retail and bulk orders</span>
+            <span>Transparent Korea shipping costs</span>
+            <span>PayPal payment available</span>
           </div>
         </div>
       </section>
@@ -90,20 +92,29 @@ export default function Home() {
       <section className="section intro">
         <div>
           <p className="eyebrow">What we do</p>
-          <h2>Reliable sourcing for Hyundai and Kia parts</h2>
+          <h2>Independent Korean auto parts sourcing service</h2>
         </div>
-        <p>
-          GANDAKOREA / Korea-Autoparts helps overseas buyers find Korean auto
-          parts, confirm compatibility, and request pricing for international
-          orders. Send us the VIN, part number, vehicle details, or photos and
-          we will help you move from inquiry to quotation.
-        </p>
+        <div className="intro__copy">
+          <p>
+            GANDAKOREA / Korea-Autoparts helps overseas buyers source Hyundai,
+            Kia, MOBIS, and GM Korea auto parts by request. We support
+            individual vehicle owners, repair shops, distributors, and
+            wholesale buyers.
+          </p>
+          <p>
+            Send your vehicle model, year, VIN, part number, photos, quantity,
+            and destination country. We will check availability, confirm
+            suitable parts, and provide a clear quotation with transparent
+            shipping costs from Korea before payment.
+          </p>
+          <p>Payment can be made through PayPal for a simple transaction.</p>
+        </div>
       </section>
 
       <section className="section" id="parts">
         <div className="section__heading">
           <p className="eyebrow">All parts available by request</p>
-          <h2>Full-range Hyundai and Kia parts supply</h2>
+          <h2>Hyundai, Kia, MOBIS, and GM Korea parts supply</h2>
         </div>
         <div className="categoryGrid">
           {categories.map((category) => (
@@ -156,7 +167,9 @@ export default function Home() {
           <h2>Send your vehicle details and parts request</h2>
           <p>
             For the most accurate quote, include your country, vehicle model,
-            year, VIN, part number, quantity, and any photos you have.
+            year, VIN, part number, quantity, and any photos you have. We
+            provide parts pricing and transparent shipping costs from Korea
+            before payment. PayPal payment is available for confirmed orders.
           </p>
         </div>
 
@@ -219,7 +232,8 @@ export default function Home() {
           <button type="submit">Contact Us</button>
           <p>
             Prefer chat? Message us on WhatsApp for photos, part numbers, and
-            urgent requests.
+            urgent requests. Please include your destination country so we can
+            check shipping options.
           </p>
         </form>
       </section>
@@ -227,9 +241,9 @@ export default function Home() {
       <footer>
         <strong>GANDAKOREA / Korea-Autoparts</strong>
         <p>
-          Hyundai and Kia are trademarks of their respective owners.
-          GANDAKOREA / Korea-Autoparts is an independent sourcing and order
-          support service unless otherwise stated.
+          All vehicle and parts brand names are trademarks of their respective
+          owners. GANDAKOREA / Korea-Autoparts is an independent sourcing and
+          order support service unless otherwise stated.
         </p>
       </footer>
     </main>
