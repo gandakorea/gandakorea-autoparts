@@ -1,9 +1,6 @@
 const whatsappUrl =
   "https://wa.me/821055670102?text=Hello%20GANDAKOREA%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20Korean%20auto%20parts.";
 
-const emailUrl =
-  "mailto:autoparts7425@gmail.com?subject=Auto%20Parts%20Quote%20Request&body=Hello%20GANDAKOREA%2C%0A%0AI%20would%20like%20to%20request%20a%20quote.%0A%0AName%3A%0ACountry%3A%0AWhatsApp%3A%0AVehicle%20brand%20%2F%20model%20%2F%20year%3A%0AVIN%20or%20part%20number%3A%0AQuantity%3A%0AAdditional%20message%3A";
-
 const categories = [
   "Engine parts",
   "Transmission",
@@ -65,7 +62,7 @@ export default function Home() {
 
         <div className="hero__content" id="top">
           <p className="eyebrow">Korean auto parts sourcing for global buyers</p>
-          <h1>Genuine Hyundai MOBIS Parts from Korea</h1>
+          <h1>Hyundai Kia All Parts From Korea</h1>
           <p className="hero__lead">
             Source Hyundai and Kia genuine parts from Korea with support for
             individual orders, workshop needs, distributor supply, and wholesale
@@ -158,10 +155,6 @@ export default function Home() {
             For the most accurate quote, include your country, vehicle model,
             year, VIN, part number, quantity, and any photos you have.
           </p>
-          <div className="contactList">
-            <a href={emailUrl}>autoparts7425@gmail.com</a>
-            <a href={whatsappUrl}>+82 10 5567 0102</a>
-          </div>
         </div>
 
         <form
