@@ -175,12 +175,12 @@ export default function Home() {
           <input
             type="hidden"
             name="_url"
-            value="https://gandakorea-autoparts.kongee7425.chatgpt.site/#quote"
+            value="https://autoparts-source.com/#quote"
           />
           <input
             type="hidden"
             name="_next"
-            value="https://gandakorea-autoparts.kongee7425.chatgpt.site/thanks"
+            value="https://autoparts-source.com/thanks"
           />
           <input
             className="quoteForm__honey"

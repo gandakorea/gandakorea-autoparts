@@ -13,24 +13,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GANDAKOREA / Korea-Autoparts | Hyundai Kia All Parts From Korea",
+  metadataBase: new URL("https://autoparts-source.com"),
+  applicationName: "Korea-Autoparts",
+  title: {
+    default: "Korea Autoparts Source | Hyundai Kia Parts From Korea",
+    template: "%s | Korea Autoparts Source",
+  },
   description:
-    "Source Hyundai and Kia genuine parts from Korea for individual, workshop, distributor, and wholesale international orders.",
+    "Korea auto parts supplier for Hyundai and Kia parts. Request quotes for retail, workshop, distributor, and wholesale orders with VIN or part number support.",
+  keywords: [
+    "Korea auto parts supplier",
+    "Hyundai parts from Korea",
+    "Kia parts from Korea",
+    "Korean auto parts",
+    "Hyundai Kia parts supplier",
+    "auto parts sourcing Korea",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "GANDAKOREA / Korea-Autoparts",
+    title: "Korea Autoparts Source | Hyundai Kia Parts From Korea",
     description:
-      "Korean auto parts sourcing for global Hyundai and Kia buyers.",
+      "Request Hyundai and Kia auto parts from Korea for retail and wholesale orders.",
+    url: "/",
+    siteName: "Korea Autoparts Source",
+    type: "website",
     images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GANDAKOREA / Korea-Autoparts",
+    title: "Korea Autoparts Source | Hyundai Kia Parts From Korea",
     description:
-      "Korean auto parts sourcing for global Hyundai and Kia buyers.",
+      "Request Hyundai and Kia auto parts from Korea for retail and wholesale orders.",
     images: ["/og.png"],
   },
 };
