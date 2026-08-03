@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GANDAKOREA / Korea-Autoparts | Hyundai Kia All Parts From Korea",
   description:
-    "Source Hyundai and Kia genuine parts from Korea for individual, workshop, distributor, and wholesale export orders.",
+    "Source Hyundai and Kia genuine parts from Korea for individual, workshop, distributor, and wholesale international orders.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

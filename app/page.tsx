@@ -65,8 +65,8 @@ export default function Home() {
           <h1>Hyundai Kia All Parts From Korea</h1>
           <p className="hero__lead">
             Source Hyundai and Kia genuine parts from Korea with support for
-            individual orders, workshop needs, distributor supply, and wholesale
-            export.
+            individual orders, workshop needs, distributor supply, and worldwide
+            orders.
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#quote">
@@ -91,9 +91,9 @@ export default function Home() {
         </div>
         <p>
           GANDAKOREA / Korea-Autoparts helps overseas buyers find Korean auto
-          parts, confirm compatibility, and request pricing for export. Send us
-          the VIN, part number, vehicle details, or photos and we will help you
-          move from inquiry to quotation.
+          parts, confirm compatibility, and request pricing for international
+          orders. Send us the VIN, part number, vehicle details, or photos and
+          we will help you move from inquiry to quotation.
         </p>
       </section>
 
@@ -117,7 +117,7 @@ export default function Home() {
           <p className="eyebrow">For B2C and B2B</p>
           <h2>Built for one-time buyers and repeat wholesale orders</h2>
           <p>
-            Whether you need one hard-to-find component or a repeated export
+            Whether you need one hard-to-find component or a repeated parts
             supply for your local market, we can support quotation, part
             matching, and order communication from Korea.
           </p>
@@ -203,8 +203,8 @@ export default function Home() {
         <strong>GANDAKOREA / Korea-Autoparts</strong>
         <p>
           Hyundai, Kia, and MOBIS are trademarks of their respective owners.
-          GANDAKOREA / Korea-Autoparts is an independent sourcing and export
-          service unless otherwise stated.
+          GANDAKOREA / Korea-Autoparts is an independent sourcing and order
+          support service unless otherwise stated.
         </p>
       </footer>
     </main>
