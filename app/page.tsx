@@ -2,7 +2,6 @@ const whatsappUrl =
   "https://wa.me/821055670102?text=Hello%20GANDAKOREA%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20Korean%20auto%20parts.";
 
 const categories = [
-  "MOBIS parts",
   "GM Korea parts",
   "Engine parts",
   "Transmission",
@@ -36,7 +35,7 @@ const process = [
   {
     step: "02",
     title: "We check availability",
-    body: "We help verify compatible Hyundai, Kia, MOBIS, and GM Korea parts and prepare a clear quotation.",
+    body: "We help verify compatible Hyundai, Kia, and GM Korea parts and prepare a clear quotation.",
   },
   {
     step: "03",
@@ -70,9 +69,9 @@ const requiredInfo = [
 
 const faqs = [
   {
-    question: "Do you supply all Hyundai, Kia, and MOBIS parts?",
+    question: "Do you supply Hyundai and Kia parts?",
     answer:
-      "We handle Hyundai, Kia, and MOBIS parts by request. Please send the VIN, part number, photos, quantity, and destination country so we can check availability.",
+      "We handle Hyundai and Kia parts by request. Please send the VIN, part number, photos, quantity, and destination country so we can check availability.",
   },
   {
     question: "Can you also supply GM Korea parts?",
@@ -119,7 +118,7 @@ export default function Home() {
           <p className="eyebrow">Korean auto parts sourcing for global buyers</p>
           <h1>Hyundai Kia All Parts From Korea</h1>
           <p className="hero__lead">
-            Source Hyundai, Kia, MOBIS, and GM Korea parts from Korea with
+            Source Hyundai, Kia, and GM Korea parts from Korea with
             support for individual orders, workshop needs, distributor supply,
             and worldwide orders.
           </p>
@@ -150,7 +149,7 @@ export default function Home() {
         <div className="intro__copy">
           <p>
             GANDAKOREA / Korea-Autoparts helps overseas buyers source Hyundai,
-            Kia, MOBIS, and GM Korea auto parts by request. We support
+            Kia, and GM Korea auto parts by request. We support
             individual vehicle owners, repair shops, distributors, and
             wholesale buyers.
           </p>
@@ -167,7 +166,7 @@ export default function Home() {
       <section className="section" id="parts">
         <div className="section__heading">
           <p className="eyebrow">All parts available by request</p>
-          <h2>Hyundai, Kia, MOBIS, and GM Korea parts supply</h2>
+          <h2>Hyundai, Kia, and GM Korea parts supply</h2>
         </div>
         <div className="categoryGrid">
           {categories.map((category) => (
