@@ -45,6 +45,57 @@ const process = [
   },
 ];
 
+const requiredInfo = [
+  {
+    title: "Vehicle model and year",
+    body: "Tell us the exact model name and production year, such as Sonata 2018 or Sportage 2021.",
+  },
+  {
+    title: "VIN or part number",
+    body: "VIN or part number helps us check compatibility and reduce the chance of wrong parts.",
+  },
+  {
+    title: "Parts name and quantity",
+    body: "List every part you need and the quantity for each item, especially for wholesale orders.",
+  },
+  {
+    title: "Destination country",
+    body: "Shipping cost depends on the country, package size, and weight, so this is required for a clear quote.",
+  },
+  {
+    title: "Photos if available",
+    body: "Photos of the old part, label, or damaged area can help us confirm the request faster.",
+  },
+];
+
+const faqs = [
+  {
+    question: "Do you supply all Hyundai, Kia, and MOBIS parts?",
+    answer:
+      "We handle Hyundai, Kia, and MOBIS parts by request. Please send the VIN, part number, photos, quantity, and destination country so we can check availability.",
+  },
+  {
+    question: "Can you also supply GM Korea parts?",
+    answer:
+      "Yes. GM Korea parts can be quoted when available. Please send the vehicle details and part information for checking.",
+  },
+  {
+    question: "Do you provide shipping cost before payment?",
+    answer:
+      "Yes. We provide transparent shipping costs from Korea before payment, so you can review the full amount before confirming the order.",
+  },
+  {
+    question: "Which payment method is available?",
+    answer:
+      "PayPal payment is available after the quotation is confirmed. Payment details are shared with the final quotation.",
+  },
+  {
+    question: "Can individual customers and wholesale buyers contact you?",
+    answer:
+      "Yes. We support individual vehicle owners, repair shops, distributors, wholesale buyers, and repeat orders.",
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -56,9 +107,11 @@ export default function Home() {
             <strong>Korea-Autoparts</strong>
           </a>
           <div className="nav__links">
+            <a href="#about">About</a>
             <a href="#parts">Parts</a>
-            <a href="#buyers">Buyers</a>
-            <a href="#quote">Quote</a>
+            <a href="#order">Order</a>
+            <a href="#faq">FAQ</a>
+            <a href="#quote">Contact</a>
           </div>
         </nav>
 
@@ -89,9 +142,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section intro">
+      <section className="section intro" id="about">
         <div>
-          <p className="eyebrow">What we do</p>
+          <p className="eyebrow">About Us</p>
           <h2>Independent Korean auto parts sourcing service</h2>
         </div>
         <div className="intro__copy">
@@ -145,10 +198,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section process">
+      <section className="section process" id="order">
         <div className="section__heading">
-          <p className="eyebrow">Simple ordering process</p>
-          <h2>From request to shipment</h2>
+          <p className="eyebrow">How to Order</p>
+          <h2>From request to payment confirmation</h2>
         </div>
         <div className="processGrid">
           {process.map((item) => (
@@ -157,6 +210,36 @@ export default function Home() {
               <h3>{item.title}</h3>
               <p>{item.body}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section requiredInfo">
+        <div className="section__heading">
+          <p className="eyebrow">Required Information</p>
+          <h2>Send the details we need to quote correctly</h2>
+        </div>
+        <div className="infoGrid">
+          {requiredInfo.map((item) => (
+            <article className="infoItem" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section faq" id="faq">
+        <div className="section__heading">
+          <p className="eyebrow">FAQ</p>
+          <h2>Common questions from overseas buyers</h2>
+        </div>
+        <div className="faqList">
+          {faqs.map((item) => (
+            <details className="faqItem" key={item.question}>
+              <summary>{item.question}</summary>
+              <p>{item.answer}</p>
+            </details>
           ))}
         </div>
       </section>

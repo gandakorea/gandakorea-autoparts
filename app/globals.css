@@ -98,6 +98,7 @@ textarea {
 .nav__links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
   color: #e6edf4;
   font-size: 0.94rem;
@@ -390,6 +391,65 @@ footer {
   line-height: 1.7;
 }
 
+.requiredInfo {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.infoItem {
+  min-height: 178px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 22px;
+}
+
+.infoItem h3 {
+  color: var(--blue-dark);
+}
+
+.infoItem p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.faq {
+  padding-top: 70px;
+}
+
+.faqList {
+  display: grid;
+  gap: 12px;
+}
+
+.faqItem {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 0 22px;
+}
+
+.faqItem summary {
+  cursor: pointer;
+  padding: 20px 0;
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.faqItem p {
+  margin-bottom: 22px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .quote {
   display: grid;
   grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
@@ -553,7 +613,8 @@ footer p {
   }
 
   .categoryGrid,
-  .processGrid {
+  .processGrid,
+  .infoGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -593,6 +654,7 @@ footer p {
   .categoryGrid,
   .buyerGrid,
   .processGrid,
+  .infoGrid,
   .quoteForm {
     grid-template-columns: 1fr;
   }
